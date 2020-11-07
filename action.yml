@@ -1,0 +1,34 @@
+name: 'Localazy Download'
+description: 'Download localizable files to the Localazy translation management platform.'
+author: 'Localazy'
+branding:
+  icon: 'download-cloud'
+  color: 'blue'
+  
+inputs:
+  workdir: 
+    description: 'Defines the working directory where to invoke Localazy CLI command.'
+    required: false
+    default: ''
+  config_file: 
+    description: 'The filename of the configuration file. Default: localazy.json'
+    required: false
+    default: 'localazy.json'
+  key_file:
+    description: 'The filename of the key file.'
+    required: false
+    default: ''
+  read_key: 
+    description: 'The read key for the project on Localazy.'
+    required: false
+    default: ''
+  write_key: 
+    description: 'The write key for the project on Localazy.'
+    required: false
+    default: ''
+  groups:
+    description: 'Define groups to be uploaded separated with a space. The default group is always uploaded. If no groups are provided, only the default one is uploaded.'
+    
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
