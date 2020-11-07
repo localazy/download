@@ -1,5 +1,5 @@
 name: 'Localazy Download'
-description: 'Download localizable files to the Localazy translation management platform.'
+description: 'Download localizable files from the Localazy translation management platform.'
 author: 'Localazy'
 branding:
   icon: 'download-cloud'
@@ -27,7 +27,7 @@ inputs:
     required: false
     default: ''
   groups:
-    description: 'Define groups to be uploaded separated with a space. The default group is always uploaded. If no groups are provided, only the default one is uploaded.'
+    description: 'Define groups to be uploaded separated with a space. The default group is always downloaded. If no groups are provided, only the default one is downloaded.'
     
 runs:
   using: 'docker'
