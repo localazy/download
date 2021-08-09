@@ -26,6 +26,10 @@ inputs:
     description: 'The write key for the project on Localazy.'
     required: false
     default: ''
+  release_tag:
+    description: 'Specifies release tag that should be downloaded.'
+    required: false
+    default: ''
   groups:
     description: 'Define groups to be uploaded separated with a space. The default group is always downloaded. If no groups are provided, only the default one is downloaded.'
     

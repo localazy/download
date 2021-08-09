@@ -22,6 +22,10 @@ if [ ! -z "$INPUT_GROUPS" ]; then
   COMMAND="$COMMAND $INPUT_GROUPS"
 fi
 
+if [ ! -z "$INPUT_RELEASE_TAG" ]; then
+  COMMAND="$COMMAND -t $INPUT_RELEASE_TAG"
+fi
+
 if [ ! -z "$INPUT_WORKDIR" ]; then
   cd $INPUT_WORKDIR
 fi

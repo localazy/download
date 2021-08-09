@@ -24,6 +24,10 @@ Download localizable files from the Localazy translation management platform. Fo
 
 **Optional** The write key for the project on Localazy. Can be defined in the config or key file but we recommend to use Github Secrets. 
 
+### `release_tag`
+
+**Optional** Specifies release tag that should be downloaded. When omitted, the _latest_ tag is downloaded. The _latest_ tag is defaultly created when you publish for the first time and updated with each publish.
+
 ### `groups`
 
 **Optional** Define groups to be uploaded separated with a space. The default group is always uploaded. If no groups are provided, only the default one is uploaded.
