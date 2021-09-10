@@ -18,12 +18,12 @@ if [ ! -z "$INPUT_WRITE_KEY" ]; then
   COMMAND="$COMMAND -w $INPUT_WRITE_KEY"
 fi
 
-if [ ! -z "$INPUT_GROUPS" ]; then
-  COMMAND="$COMMAND $INPUT_GROUPS"
-fi
-
 if [ ! -z "$INPUT_RELEASE_TAG" ]; then
   COMMAND="$COMMAND -t $INPUT_RELEASE_TAG"
+fi
+
+if [ ! -z "$INPUT_GROUPS" ]; then
+  COMMAND="$COMMAND $INPUT_GROUPS"
 fi
 
 if [ ! -z "$INPUT_WORKDIR" ]; then
